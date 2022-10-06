@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genman</title>
+    <link rel="stylesheet" href="dist/output.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+    <nav class="h-[70px] bg-black w-[100%] opacity-80 mb-12 py-1 px-3 fixed z-10">
+        <div class="container flex justify-between items-center mx-auto">
+            <a href="/">
+                <img class="block w-64 h-16" src="https://www.traversymedia.com/images/logo_long.png" alt="">      
+            </a>
+
+            <ul class="desktop-menu hidden sm:flex">
+                <li><a class="text-white ml-7 pb-1" href="#courses">Courses</a></li>
+                <li><a class="text-white ml-7 pb-1" href="#ebook">eBook</a></li>
+                <li><a  class="text-white ml-7 pb-1" href="#freelance">Freelance Mastery</a></li>
+                <!-- <li><a href="#about">About</a></li> -->
+                <!-- <li><a href="#testimonials">Testimonials</a></li> -->
+                <li><a  class="text-white ml-7 pb-1" href="#youtube">YouTube</a></li>
+                
+            </ul>
+
+            <div class="mobile-menu block fixed top-0 right-16 z-[1] sm:hidden">
+                <input type="checkbox" class="toggler absolute top-0 left-0 z-[2] cursor-pointer w-[70px] h-[70px] opacity-0" role="checkbox" aria-checked="false" tabindex="0">
+                <div class="hamburger absolute top-0 left-0 z-[1] w-[70px] h-[70px] p-4 bg-blue-500 flex items-center justify-center ">
+                    <div class="space-y-2 z-[2]">
+                        <div class="w-8 h-0.5 bg-white"></div>
+                        <div class="w-8 h-0.5 bg-white"></div>
+                        <div class="w-8 h-0.5 bg-white"></div>
+                      </div>
+
+                </div>
+                
+                
+
+                <div class="menu fixed top-0 left-0 w-[100%] h-[100%] invisible overflow-hidden flex items-center justify-center">
+                  <div>
+                    <div>
+                      <ul>
+                        <li><a href="#courses">Mobile</a></li>
+                        <li><a href="#ebook">Mobile</a></li>
+                        <li><a href="#freelance">Mobile Mastery</a></li>
+                        <!-- <li><a href="#about">About</a></li> -->
+                        <!-- <li><a href="#testimonials">Testimonials</a></li> -->
+                        <li><a href="#youtube">Mobile</a></li>
+                       
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <header class="relative bg-[url('https://www.traversymedia.com/images/bg.png')] bg-cover bg-center bg-no-repeat min-h-[100vh] w-[100%] text-center py-0 px-28 flex justify-center items-center before:w-[100%] before:h-[100%] before:bg-black before:absolute before:opacity-70 before:top-0 before:left-0">
+        <!-- <header class="relative bg-[url('https://www.traversymedia.com/images/bg.png')] h-[100vh] w-[100%] text-center py-0 px-28 flex justify-center items-center before:content-[''] before:w-[100%] before:h-[100%] before:bg-black before:opacity-80 before:top-0 before:left-0"></header> -->
+        <div class="relative z-[2] w-[700px] m-auto">
+            <div class="container m-auto">
+                <h5 class="text-lg text-blue-500 font-semibold">Genman Systems</h5>
+                <h1 class="text-[64px] text-white leading-normal font-bold">WEB DEVELOPMENT COURSES FOR EVERYONE</h1>
+                <p class="lead text-[20px] my-[30px] mx-0">
+                    Practical project-based courses that are easy to understand and
+                    straight to the point with NO FLUFF
+                  </p>
+
+                  <a href="#courses" class="py-5 px-8 bg-blue-500 inline-block rounded uppercase cursor-pointer text-[15px] text-center font-semibold">Start Learning Today</a>
+
+                  <div class="stats grid grid-cols-3 gap-10 mt-32">
+                    <div class="stat">
+                      <i class="fas fa-cogs fa-4x"></i>
+                      <h3 class="text-[50px] font-bold">10+</h3>
+                      <p>Years of Experience</p>
+                    </div>
+                    <div class="stat">
+                      <i class="fas fa-graduation-cap fa-4x"></i>
+                      <h3 class="text-[50px] font-bold">100+</h3>
+                      <p>Projects</p>
+                    </div>
+                    <div class="stat">
+                      <i class="fab fa-youtube fa-4x"></i>
+                      <h3 class="text-[50px] font-bold">3k+</h3>
+                      <p>Subscribers</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- projects -->
+        <section class="p-5 bg-[url('https://www.traversymedia.com/images/bg-pattern-1.png')]">
+            <div class="container mx-auto">
+                   <h2 class="mt-7 mb-5 text-center text-[32px] font-bold"><span class="text-blue-500">Previous</span> Projects</h2> 
+                   <p class="text-center lead mb-8">
+                    Hover over the course to see this months discount code
+                    <!-- <div class="promo"></div> -->
+                  </p>
+
+
+                  <div class="course-grid grid grid-cols-3 gap-10 ">
+                    <div class="card bg-[#222] rounded shadow-[0_0_10px_0_rgba(0,0,0,0.1) py-5 px-8 relative border border-solid border-[#333]">
+                      <img src="https://www.traversymedia.com/images/courses/tailwind_small.png" alt="" class="course-img w-[60px] absolute top-[10px] right-[10px]">
+                      <div class="card-body pt-[30px] h-[150px]">
+                        <div class="level mb-2 text-blue-500 uppercase">Beginner</div>
+                        <h3>Tailwind CSS From Scratch</h3>
+                      </div>
+                      <div class="card-footer flex justify-start items-center">
+
+                        <img class="w-[30px] mr-[10px]" src="https://www.traversymedia.com/images/udemy-logo.png" alt="" />
+                        
+                        <a class="whitespace-nowrap" href="https://www.udemy.com/course/tailwind-from-scratch" target="_blank">                            
+                                View on GitHub
+                        </a>
+                        <div class="promo-code absolute -bottom-9 left-1/2 translate-x-[50%] text-[13px] w-[100%] text-center ">CODE: <span class="promo">TAILWIND<span class="promo-display">OCT2022</span></span></div>
+                      </div>
+                    </div>
+          
+                    <div class="card bg-[#222] rounded shadow-[0_0_10px_0_rgba(0,0,0,0.1) py-5 px-8 relative border border-solid border-[#333]">
+                        <img src="https://www.traversymedia.com/images/courses/tailwind_small.png" alt="" class="course-img w-[60px] absolute top-[10px] right-[10px]">
+                        <div class="card-body pt-[30px] h-[150px]">
+                          <div class="level mb-2 text-blue-500 uppercase">Beginner</div>
+                          <h3>Tailwind CSS From Scratch</h3>
+                        </div>
+                        <div class="card-footer flex justify-start items-center">
+  
+                          <img class="w-[30px] mr-[10px]" src="https://www.traversymedia.com/images/udemy-logo.png" alt="" />
+                          
+                          <a class="whitespace-nowrap" href="https://www.udemy.com/course/tailwind-from-scratch" target="_blank">                            
+                                  View on GitHub
+                          </a>
+                          <div class="promo-code absolute -bottom-9 left-1/2 translate-x-[50%] text-[13px] w-[100%] text-center ">CODE: <span class="promo">TAILWIND<span class="promo-display">OCT2022</span></span></div>
+                        </div>
+                      </div>
+          
+                      <div class="card bg-[#222] rounded shadow-[0_0_10px_0_rgba(0,0,0,0.1) py-5 px-8 relative border border-solid border-[#333]">
+                        <img src="https://www.traversymedia.com/images/courses/tailwind_small.png" alt="" class="course-img w-[60px] absolute top-[10px] right-[10px]">
+                        <div class="card-body pt-[30px] h-[150px]">
+                          <div class="level mb-2 text-blue-500 uppercase">Beginner</div>
+                          <h3>Tailwind CSS From Scratch</h3>
+                        </div>
+                        <div class="card-footer flex justify-start items-center">
+  
+                          <img class="w-[30px] mr-[10px]" src="https://www.traversymedia.com/images/udemy-logo.png" alt="" />
+                          
+                          <a class="whitespace-nowrap" href="https://www.udemy.com/course/tailwind-from-scratch" target="_blank">                            
+                                  View on GitHub
+                          </a>
+                          <div class="promo-code absolute -bottom-9 left-1/2 translate-x-[50%] text-[13px] w-[100%] text-center ">CODE: <span class="promo">TAILWIND<span class="promo-display">OCT2022</span></span></div>
+                        </div>
+                      </div>
+          
+                  </div>
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>
