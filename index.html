@@ -15,16 +15,16 @@
   />
 </head>
 <body>
-    <nav class="h-[70px] bg-black w-[100%] opacity-80 mb-12 py-1 px-3 fixed z-10">
+    <nav class="h-[70px] bg-black w-[100%] opacity-80 mb-14 py-1 px-3 fixed z-10">
         <div class="w-[100%] container sm: flex justify-between items-center mx-auto">
             <a href="/">
-                <img class="block w-64 h-16" src="https://www.traversymedia.com/images/logo_long.png" alt="">      
+                <img class="block w-64 h-16" src="dist/assets/logo.png" alt="">      
             </a>
 
             <ul class="desktop-menu hidden sm:flex">
-                <li><a class="text-white ml-7 pb-1" href="#courses">Courses</a></li>
-                <li><a class="text-white ml-7 pb-1" href="#ebook">eBook</a></li>
-                <li><a  class="text-white ml-7 pb-1" href="#freelance">Freelance Mastery</a></li>
+                <li><a class="text-white ml-7 pb-1" href="#projects">Projects</a></li>
+                <li><a class="text-white ml-7 pb-1" href="#about">About</a></li>
+                <li><a  class="text-white ml-7 pb-1" href="#freelance">Freelance Works</a></li>
                 <!-- <li><a href="#about">About</a></li> -->
                 <!-- <li><a href="#testimonials">Testimonials</a></li> -->
                 <li><a  class="text-white ml-7 pb-1" href="#youtube">YouTube</a></li>
@@ -32,8 +32,8 @@
             </ul>
 
             <div class="mobile-menu block fixed top-0 right-16 z-[1] sm:hidden">
-                <input type="checkbox" class="toggler absolute top-0 left-0 z-[2] cursor-pointer w-[70px] h-[70px] opacity-0" role="checkbox" aria-checked="false" tabindex="0">
-                <div class="hamburger absolute top-0 left-0 z-[1] w-[70px] h-[70px] p-4 bg-blue-500 flex items-center justify-center ">
+                <input id="btnToggle" type="checkbox" class="toggler peer absolute top-0 left-0 z-[2] cursor-pointer w-[70px] h-[70px] opacity-0" role="checkbox" aria-checked="false" tabindex="0">
+                <div class="hamburger absolute top-0 left-0 z-[1] w-[70px] h-[70px] p-4 bg-red-500 flex items-center justify-center ">
                     <div class="space-y-2 z-[2]">
                         <div class="w-8 h-0.5 bg-white"></div>
                         <div class="w-8 h-0.5 bg-white"></div>
@@ -44,16 +44,16 @@
                 
                 
 
-                <div class="menu fixed top-0 left-0 w-[100%] h-[100%] invisible overflow-hidden flex items-center justify-center">
-                  <div>
-                    <div>
-                      <ul>
-                        <li><a href="#courses">Mobile</a></li>
-                        <li><a href="#ebook">Mobile</a></li>
-                        <li><a href="#freelance">Mobile Mastery</a></li>
+                <div class="menu bg-[rgb(0,0,0,1)] fixed top-0 left-0 w-[100%] h-[100%] invisible overflow-hidden flex items-center justify-center">
+                  <div class=" w-[200vw] h-[200vh] flex flex-none items-center justify-center  peer-checked:scale-100 peer-checked:duration-75">
+                    <div class="text-center max-w-[90vw] max-h-[100vh] sm:opacity-0 peer-checked:opacity-100 peer-checked:transition-opacity">
+                      <ul class="flex flex-col">
+                        <li class="text-[22px] p-4"><a href="#projects">Projects</a></li>
+                        <li class="text-[22px] p-4"><a href="#about">About</a></li>
+                        <li class="text-[22px] p-4"><a href="#freelance">Freelance</a></li>
                         <!-- <li><a href="#about">About</a></li> -->
                         <!-- <li><a href="#testimonials">Testimonials</a></li> -->
-                        <li><a href="#youtube">Mobile</a></li>
+                        <li class="text-[22px] p-4"><a href="#youtube">Youtube</a></li>
                        
                       </ul>
                     </div>
@@ -63,20 +63,19 @@
 
         </div>
     </nav>
-    <header class="relative bg-[url('/dist/assets/bg.jpg')] bg-cover bg-center bg-no-repeat min-h-[100vh] w-[100%] text-center py-0 px-28 flex justify-center items-center before:w-[100%] before:h-[100%] before:bg-black before:absolute before:opacity-70 before:top-0 before:left-0">
-        <!-- <header class="relative bg-[url('https://www.traversymedia.com/images/bg.png')] h-[100vh] w-[100%] text-center py-0 px-28 flex justify-center items-center before:content-[''] before:w-[100%] before:h-[100%] before:bg-black before:opacity-80 before:top-0 before:left-0"></header> -->
+    <header class="relative bg-[url('https://i.ibb.co/pxhvBPd/20210131-161827.jpg')] bg-cover bg-center bg-no-repeat h-[100vh] sm:min-h-[100vh] w-[100%] text-center py-0 px-28 flex justify-center items-center before:w-[100%] before:h-[100%] before:bg-black before:absolute before:opacity-70 before:top-0 before:left-0">
+        
         <div class="relative z-[2] w-[700px] m-auto">
             <div class="container m-auto">
-                <h5 class="text-lg text-blue-500 font-semibold">Genman Systems</h5>
-                <h1 class="text-[64px] text-white leading-normal font-bold">WEB DEVELOPMENT COURSES FOR EVERYONE</h1>
-                <p class="lead text-[20px] my-[30px] mx-0">
-                    Practical project-based courses that are easy to understand and
-                    straight to the point with NO FLUFF
+                <h5 class="text-lg text-red-500 font-semibold">John Ray Deloso Paulin</h5>
+                <h1 class="sm:text-[64px] text-[40px] text-white leading-normal font-bold">Full Stack Web Developer</h1>
+                <p class="lead text-[18px] sm:text-[20px] my-[30px] mx-0">
+                    Over 10 years of development experience and worked on variety of projects using different technology stacks.
                   </p>
 
-                  <a href="#courses" class="py-5 px-8 bg-blue-500 inline-block rounded uppercase cursor-pointer text-[15px] text-center font-semibold">Start Learning Today</a>
+                  <a href="#projects" class="py-5 px-8 bg-red-500 inline-block rounded uppercase cursor-pointer text-[15px] text-center font-semibold">View Projects</a>
 
-                  <div class="stats grid grid-cols-3 gap-10 mt-32">
+                  <div class="stats hidden sm:grid grid-cols-3 gap-10 mt-32">
                     <div class="stat">
                       <i class="fas fa-cogs fa-4x"></i>
                       <h3 class="text-[50px] font-bold">10+</h3>
@@ -98,16 +97,18 @@
     </header>
     <main>
         <!-- projects -->
-        <section class="p-5 bg-[url('https://www.traversymedia.com/images/bg-pattern-1.png')]">
+        <section id="projects" class="p-5 bg-[url('dist/assets/bg-pattern-1.png')] pb-20">
             <div class="container mx-auto">
-                   <h2 class="mt-7 mb-5 text-center text-[32px] font-bold"><span class="text-blue-500">Previous</span> Projects</h2> 
+                   <h2 class="mt-7 mb-5 text-center text-[32px] font-bold"><span class="text-red-500">Previous</span> Projects</h2> 
                    <p class="text-center lead mb-8">
                     Hover over the course to see this months discount code
                     <!-- <div class="promo"></div> -->
                   </p>
 
+                  
 
-                  <div class="course-grid grid grid-cols-3 gap-10 ">
+
+                  <div class="course-grid grid sm:grid-cols-3 gap-10 grid-cols-1">
                     <div class="card bg-[#222] rounded shadow-[0_0_10px_0_rgba(0,0,0,0.1) py-5 px-8 relative border border-solid border-[#333]">
                       <img src="https://www.traversymedia.com/images/courses/tailwind_small.png" alt="" class="course-img w-[60px] absolute top-[10px] right-[10px]">
                       <div class="card-body pt-[30px] h-[150px]">
@@ -121,7 +122,7 @@
                         <a class="whitespace-nowrap" href="https://www.udemy.com/course/tailwind-from-scratch" target="_blank">                            
                                 View on GitHub
                         </a>
-                        <div class="promo-code absolute -bottom-9 left-1/2 translate-x-[50%] text-[13px] w-[100%] text-center ">CODE: <span class="promo">TAILWIND<span class="promo-display">OCT2022</span></span></div>
+                        <!-- <div class="promo-code absolute -bottom-9 left-1/2 translate-x-[50%] text-[13px] w-[100%] text-center ">CODE: <span class="promo">TAILWIND<span class="promo-display">OCT2022</span></span></div> -->
                       </div>
                     </div>
           
@@ -138,7 +139,7 @@
                           <a class="whitespace-nowrap" href="https://www.udemy.com/course/tailwind-from-scratch" target="_blank">                            
                                   View on GitHub
                           </a>
-                          <div class="promo-code absolute -bottom-9 left-1/2 translate-x-[50%] text-[13px] w-[100%] text-center ">CODE: <span class="promo">TAILWIND<span class="promo-display">OCT2022</span></span></div>
+                          <!-- <div class="promo-code absolute -bottom-9 left-1/2 translate-x-[50%] text-[13px] w-[100%] text-center ">CODE: <span class="promo">TAILWIND<span class="promo-display">OCT2022</span></span></div> -->
                         </div>
                       </div>
           
@@ -155,7 +156,7 @@
                           <a class="whitespace-nowrap" href="https://www.udemy.com/course/tailwind-from-scratch" target="_blank">                            
                                   View on GitHub
                           </a>
-                          <div class="promo-code -bottom-9 left-1/2  text-[13px] w-[100%] text-center ">CODE: <span class="promo">TAILWIND<span class="promo-display">OCT2022</span></span></div>
+                          <!-- <div class="promo-code -bottom-9 left-1/2  text-[13px] w-[100%] text-center ">CODE: <span class="promo">TAILWIND<span class="promo-display">OCT2022</span></span></div> -->
                         </div>
                       </div>
 
@@ -173,7 +174,7 @@
                           <a class="whitespace-nowrap" href="https://www.udemy.com/course/tailwind-from-scratch" target="_blank">                            
                                   View on GitHub
                           </a>
-                          <div class="promo-code -bottom-9 left-1/2  text-[13px] w-[100%] text-center ">CODE: <span class="promo">TAILWIND<span class="promo-display">OCT2022</span></span></div>
+                          <!-- <div class="promo-code -bottom-9 left-1/2  text-[13px] w-[100%] text-center ">CODE: <span class="promo">TAILWIND<span class="promo-display">OCT2022</span></span></div> -->
                         </div>
                       </div>
 
@@ -190,7 +191,7 @@
                           <a class="whitespace-nowrap" href="https://www.udemy.com/course/tailwind-from-scratch" target="_blank">                            
                                   View on GitHub
                           </a>
-                          <div class="promo-code -bottom-9 left-1/2  text-[13px] w-[100%] text-center ">CODE: <span class="promo">TAILWIND<span class="promo-display">OCT2022</span></span></div>
+                          <!-- <div class="promo-code -bottom-9 left-1/2  text-[13px] w-[100%] text-center ">CODE: <span class="promo">TAILWIND<span class="promo-display">OCT2022</span></span></div> -->
                         </div>
                       </div>
 
@@ -207,7 +208,7 @@
                           <a class="whitespace-nowrap" href="https://www.udemy.com/course/tailwind-from-scratch" target="_blank">                            
                                   View on GitHub
                           </a>
-                          <div class="promo-code -bottom-9 left-1/2  text-[13px] w-[100%] text-center ">CODE: <span class="promo">TAILWIND<span class="promo-display">OCT2022</span></span></div>
+                          <!-- <div class="promo-code -bottom-9 left-1/2  text-[13px] w-[100%] text-center ">CODE: <span class="promo">TAILWIND<span class="promo-display">OCT2022</span></span></div> -->
                         </div>
                       </div>
           
@@ -215,6 +216,117 @@
 
             </div>
         </section>
+
+        <section class="bg-red-700 py-[50px] text-center">
+            <div class="container max-w-[1100px] m-auto">
+                <div class="ebook-grid grid sm:grid-cols-2 grid-cols-1 gap-10 justify-between items-center items px-10">
+                   <img class="w-[450px] mr-10" src="https://www.traversymedia.com/images/ebook.png" alt="">
+                   <div class="ebook-content m-auto">
+                    <h4>John Paulin</h4>
+                    <h3 class="text-[45px] font-bold">Web Dev Guide</h3>
+                    <p>The most complete guide to web development technologies on the planet.</p>
+                    <p>
+                      This guide also goes into different programming concepts, careers and even mental health.
+                    </p>
+                    <a target="_blank" href="https://traversy.gumroad.com/l/web-dev-guide" class="btn btn-dark">Get It For $9.99</a>
+                  </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- freelance -->
+        <section class="bg-[url('https://www.traversymedia.com/images/bg-pattern-2.png')] text-[#333]">
+          <div class="container max-w-[1100px] m-auto grid grid-cols-1 sm:grid-cols-2 justify-center items-center text-center">
+            <div class="card card-light bg-[#f4f4f4] text-[#333] border border-solid rounded-md py-[20px] px-[30px]">
+              <h5>New Course</h5>
+              <h3 class="my-[10px] text-[28px]">Freelance Mastery</h3>
+              <p>
+                Brad Traversy and Kyle Prinsloo have teamed up to bring you a
+                business-based course to show you how to create a successful
+                freelancing business from the ground up.
+              </p>
+    
+              <a href="https://freelancemastery.dev" target="_blank" class="btn btn-primary">Find Out More</a>
+            </div>
+
+            <img src="https://www.traversymedia.com/images/flm-logo.png" alt="">
+          </div>
+        </section>
+        <!-- freelance -->
+        <!-- about -->
+        <section id="about" class="p-5 bg-[url('https://www.traversymedia.com/images/bg-pattern-1.png')] pb-20 text-white">
+            <div class="container max-w-[1100px] m-auto">
+                <h2 class="mt-3 mb-8 text-[35px] text-center">What is Genman Systems?</h2>
+                <div class="about-grid grid grid-cols-1 sm:grid-cols-2 gap-10 justify-between items-center">
+                  <img src="https://avatars.githubusercontent.com/u/74034797?s=400&u=8d250db9bceb4f7415526ea5b276c203f10e3fa9&v=4" alt="">
+                  <div class="card bg-[#222] rounded-md py-5 px-8 relative border border-solid border-[#333]">
+                    <div class="card-body">
+                      <p class="my-6">
+                        I started coding in 2007 at the age of 26. I became a full-time educator &amp; content creator in 2016.
+                      </p>            
+                      <p>
+                        I show people that they don't have to be a straight A student or
+                        a genius to learn to code. I break down complex concepts by
+                        showing you how to implement them in project-based courses and
+                        tutorials.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+        <!-- about -->
+        <section id="videos" class="p-6 bg-[url('https://www.traversymedia.com/images/videos-bg.png')]">
+            <div class="container max-w-[1100px] m-auto">
+                  <div class="youtube-grid grid grid-cols-1 sm:grid-cols-2 gap-10 justify-between items-center text-center"  >
+                      <img src="https://www.traversymedia.com/images/youtube.png" alt="">
+                      <div>
+
+                        <h2 class="text-lg">Traversy Media on YouTube</h2>
+                        <p class="lead text-center">Our YouTube channel has 1000+ free tutorials and crash courses</p>
+                        <div class="yt-btn">
+            
+                          <div id="___ytsubscribe_1" style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 112px; height: 24px;"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 112px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 24px;" tabindex="0" vspace="0" width="100%" id="I1_1665382797963" name="I1_1665382797963" src="https://www.youtube.com/subscribe_embed?usegapi=1&amp;channel=techguyweb&amp;layout=default&amp;count=default&amp;origin=https%3A%2F%2Fwww.traversymedia.com&amp;gsrc=3p&amp;jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.lb.en.z9QjrzsHcOc.O%2Fd%3D1%2Frs%3DAHpOoo8359JQqZQ0dzCVJ5Ui3CZcERHEWA%2Fm%3D__features__#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&amp;id=I1_1665382797963&amp;_gfid=I1_1665382797963&amp;parent=https%3A%2F%2Fwww.traversymedia.com&amp;pfname=&amp;rpctoken=28760745" data-gapiattached="true"></iframe></div>
+                        </div>
+            
+                        <div class="yt-buttons text-center">   
+                          <a class="btn btn-dark" href="https://youtube.com/traversymedia" target="_blank">Visit Channel</a>
+                          <a class="btn btn-light" href="https://traversymedia.com/guide">Content Guide</a>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+        </section>
+        <!-- about -->
+        <!-- crash course -->
+        <section id="freelance" class="p-5">
+          <div class="container max-w-[1100px] m-auto ">
+            <h2 class="text-lg text-[35px] text-center pt-5">Popular Crash Courses</h2>
+            <p class="lead text-center text-lg my-10">
+              Visit The Traversy Media <a class="text-red" href="https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA" target="_blank">YouTube channel</a> for many more
+            </p>
+          </div>
+        </section>
+        <!-- crash course -->
+
+        <section class="bg-red-500 p-5">
+            <div class="container max-w-[1100px] m-auto grid grid-cols-2 justify-between items-center">
+              <h3 class="text-lg uppercase">Genman Systems</h3>
+              <div class="justify-self-end">
+                  <a href="https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA" target="_blank">
+                    <span class="sr-only">YouTube</span><i class="fab fa-youtube fa-2x"></i>
+                  </a>
+                  <a class="ml-4" href="https://github.com/genmancoder" target="_blank">
+                    <span class="sr-only">GitHub</span><i class="fab fa-github fa-2x"></i>
+                  </a>
+                  <a class="ml-4" href="https://www.linkedin.com/in/john-ray-paulin-75077051/" target="_blank">
+                    <span class="sr-only">Linkedin</span><i class="fab fa-linkedin fa-2x"></i>
+                  </a>
+              </div>
+            </div>
+        </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>

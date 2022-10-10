@@ -7,8 +7,14 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+
 body{
     color: white;
+    background: #000;
 }
 
 
