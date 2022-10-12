@@ -16,9 +16,47 @@ body{
   background: #000;
 }
 
-/*
-! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
-*/
+.typewriter{
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  /* Adjust as needed */
+  animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: orange;
+  }
+}
+
+/* ! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -710,6 +748,14 @@ video {
   margin-left: 1rem;
 }
 
+.mt-8{
+  margin-top: 2rem;
+}
+
+.mt-14{
+  margin-top: 3.5rem;
+}
+
 .block{
   display: block;
 }
@@ -788,6 +834,10 @@ video {
 
 .w-\[700px\]{
   width: 700px;
+}
+
+.w-\[400px\]{
+  width: 400px;
 }
 
 .w-\[60px\]{
@@ -936,24 +986,20 @@ video {
   background-image: url('https://i.ibb.co/pxhvBPd/20210131-161827.jpg');
 }
 
-.bg-\[url\(\'https\:\/\/www\.traversymedia\.com\/images\/bg\.png\'\)\]{
-  background-image: url('https://www.traversymedia.com/images/bg.png');
+.bg-\[url\(\'https\:\/\/raw\.githubusercontent\.com\/genmancoder\/port-folio\/master\/dist\/assets\/bg-pattern-1\.png\'\)\]{
+  background-image: url('https://raw.githubusercontent.com/genmancoder/port-folio/master/dist/assets/bg-pattern-1.png');
+}
+
+.bg-\[url\(\'https\:\/\/raw\.githubusercontent\.com\/genmancoder\/port-folio\/master\/dist\/assets\/bg-pattern-2\.png\'\)\]{
+  background-image: url('https://raw.githubusercontent.com/genmancoder/port-folio/master/dist/assets/bg-pattern-2.png');
 }
 
 .bg-\[url\(\'https\:\/\/www\.traversymedia\.com\/images\/bg-pattern-1\.png\'\)\]{
   background-image: url('https://www.traversymedia.com/images/bg-pattern-1.png');
 }
 
-.bg-\[url\(\'https\:\/\/www\.traversymedia\.com\/images\/bg-pattern-2\.png\'\)\]{
-  background-image: url('https://www.traversymedia.com/images/bg-pattern-2.png');
-}
-
 .bg-\[url\(\'https\:\/\/www\.traversymedia\.com\/images\/videos-bg\.png\'\)\]{
   background-image: url('https://www.traversymedia.com/images/videos-bg.png');
-}
-
-.bg-\[url\(\'dist\/assets\/bg-pattern-1\.png\'\)\]{
-  background-image: url('dist/assets/bg-pattern-1.png');
 }
 
 .bg-cover{
@@ -1044,6 +1090,14 @@ video {
 
 .pt-5{
   padding-top: 1.25rem;
+}
+
+.pt-7{
+  padding-top: 1.75rem;
+}
+
+.pt-8{
+  padding-top: 2rem;
 }
 
 .text-center{
@@ -1173,16 +1227,6 @@ video {
 .before\:opacity-70::before{
   content: var(--tw-content);
   opacity: 0.7;
-}
-
-.before\:opacity-80::before{
-  content: var(--tw-content);
-  opacity: 0.8;
-}
-
-.before\:content-\[\'\'\]::before{
-  --tw-content: '';
-  content: var(--tw-content);
 }
 
 .peer:checked ~ .peer-checked\:scale-100{
