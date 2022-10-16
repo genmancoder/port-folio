@@ -740,20 +740,12 @@ video {
   margin-right: 2.5rem;
 }
 
-.mt-3{
-  margin-top: 0.75rem;
-}
-
-.ml-4{
-  margin-left: 1rem;
-}
-
 .mt-8{
   margin-top: 2rem;
 }
 
-.mt-14{
-  margin-top: 3.5rem;
+.ml-4{
+  margin-left: 1rem;
 }
 
 .block{
@@ -998,8 +990,8 @@ video {
   background-image: url('https://www.traversymedia.com/images/bg-pattern-1.png');
 }
 
-.bg-\[url\(\'https\:\/\/www\.traversymedia\.com\/images\/videos-bg\.png\'\)\]{
-  background-image: url('https://www.traversymedia.com/images/videos-bg.png');
+.bg-\[url\(\'https\:\/\/raw\.githubusercontent\.com\/genmancoder\/port-folio\/master\/dist\/assets\/videos-bg\.jpg\'\)\]{
+  background-image: url('https://raw.githubusercontent.com/genmancoder/port-folio/master/dist/assets/videos-bg.jpg');
 }
 
 .bg-cover{
@@ -1084,20 +1076,20 @@ video {
   padding-bottom: 5rem;
 }
 
-.pt-\[30px\]{
-  padding-top: 30px;
+.pt-8{
+  padding-top: 2rem;
 }
 
-.pt-5{
-  padding-top: 1.25rem;
+.pt-\[30px\]{
+  padding-top: 30px;
 }
 
 .pt-7{
   padding-top: 1.75rem;
 }
 
-.pt-8{
-  padding-top: 2rem;
+.pt-5{
+  padding-top: 1.25rem;
 }
 
 .text-center{
